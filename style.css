@@ -141,6 +141,69 @@ p {
     font-size: 22px;
   }
 
+   /* ==============================
+   ACADEMIC PAGE (LIGHT THEME)
+================================ */
+.academic-page {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #FFD6C9,
+    #FFB6B6,
+    #FFA1C5,
+    #E695D9
+  );
+  color: #2b1b3f;
+  padding: 80px 20px;
+}
+
+/* Academic Title */
+.academic-page h1 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Academic Cards */
+.academic-card {
+  max-width: 850px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+  padding: 25px 30px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Degree Title */
+.academic-card h3 {
+  font-size: 22px;
+  color: #5e3b76;
+  margin-bottom: 8px;
+}
+
+/* Institute */
+.academic-card h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+/* Score */
+.academic-card span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #C98BFF;
+}
+
+/* Back Button */
+.academic-page .btn {
+  display: block;
+  width: fit-content;
+  margin: 50px auto 0;
+}
+
+
   p {
     font-size: 16px;
   }
