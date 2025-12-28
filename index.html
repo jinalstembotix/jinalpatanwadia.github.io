@@ -1,23 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
+<header>
+    <h1>PORTFOLIO</h1>
+    <div class="divider">
+        <span></span>
+        <i class="fa-solid fa-star"></i>
+        <span></span>
+    </div>
+</header>
 
-<div class="container">
-<h1>My Portfolio</h1>
+<section class="portfolio">
+    <div class="card" onclick="location.href='academic.html'">
+        <img src="images/academics.jpg" alt="Academics">
+        <div class="overlay">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Academics</h3>
+        </div>
+    </div>
 
+    <div class="card" onclick="location.href='experience.html'">
+        <img src="images/experience.jpg" alt="Experience">
+        <div class="overlay">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Work Experience</h3>
+        </div>
+    </div>
 
-<button class="btn" onclick="location.href='academic.html'">🎓 Academics</button>
-<button class="btn" onclick="location.href='experience.html'">💼 Work Experience</button>
-<button class="btn" onclick="location.href='achievements.html'">🏆 Achievements</button>
-<button class="btn" onclick="location.href='skills.html'">🛠 Technical Skills</button>
-<button class="btn" onclick="location.href='projects.html'">🚀 Projects</button>
-</div>
+    <div class="card" onclick="location.href='projects.html'">
+        <img src="images/projects.jpg" alt="Projects">
+        <div class="overlay">
+            <i class="fa-solid fa-rocket"></i>
+            <h3>Projects</h3>
+        </div>
+    </div>
 
+    <div class="card" onclick="location.href='skills.html'">
+        <img src="images/skills.jpg" alt="Skills">
+        <div class="overlay">
+            <i class="fa-solid fa-code"></i>
+            <h3>Technical Skills</h3>
+        </div>
+    </div>
+
+    <div class="card" onclick="location.href='achievements.html'">
+        <img src="images/achievements.jpg" alt="Achievements">
+        <div class="overlay">
+            <i class="fa-solid fa-trophy"></i>
+            <h3>Achievements</h3>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>
