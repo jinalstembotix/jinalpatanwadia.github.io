@@ -1,1 +1,83 @@
-<h1>Technical Skills Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Technical Skills</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.skill-card {
+  background: linear-gradient(135deg,#E06B45,#C0C0C0);
+  padding: 25px;
+  border-radius: 16px;
+  color: #2F3020;
+}
+
+.skill-card h2 {
+  margin-top: 0;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.skill-card ul {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.skill-card li {
+  margin-bottom: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Technical Skills</h1>
+
+  <div class="skills-grid">
+
+    <!-- Technical Projects -->
+    <div class="skill-card">
+      <h2>Technical Projects</h2>
+      <ul>
+        <li>Waste Management System</li>
+        <li>Garbage to Electricity</li>
+        <li>Air Carbon Filtration System</li>
+        <li>Smart Irrigation System</li>
+        <li>Home Automation System</li>
+        <li>Web Server Controlled Projects</li>
+        <li>Blynk IoT Projects</li>
+        <li>Emergency Fire Exit System</li>
+        <li>Home Security System</li>
+        <li>Smart Street Light Project</li>
+      </ul>
+    </div>
+
+    <!-- Tools & Technologies -->
+    <div class="skill-card">
+      <h2>Tools & Technologies</h2>
+      <ul>
+        <li>Robotics – Arduino IDE</li>
+        <li>Arduino – Arduino IDE</li>
+        <li>ESP8266 – Arduino IDE</li>
+        <li>IoT – ThingSpeak, Blynk IoT</li>
+        <li>C Programming (Beginner)</li>
+        <li>Python (Beginner)</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <button class="btn back" onclick="location.href='index.html'">⬅ Back</button>
+</div>
+
+</body>
+</html>
