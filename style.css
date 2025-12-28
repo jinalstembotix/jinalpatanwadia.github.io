@@ -1,184 +1,62 @@
-/* ============================== 
-   GOOGLE FONT
-================================ */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-/* ==============================
-   RESET
-================================ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* ==============================
-   BODY
-================================ */
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #fff;
-  color: #333;
+margin: 0;
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#E06B45,#C0C0C0,#596235,#2F3020);
+background-size: 400% 400%;
+animation: bgMove 12s ease infinite;
+color: #ffffff;
+overflow-x: hidden;
 }
 
-/* ==============================
-   HERO SECTION
-================================ */
-.hero-section {
-  position: relative;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #6a3ab7, #e695d9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 60px 20px;
-  color: #fff;
-  overflow: hidden;
+
+@keyframes bgMove {
+0% {background-position: 0% 50%;}
+50% {background-position: 100% 50%;}
+100% {background-position: 0% 50%;}
 }
 
-.background-icons span {
-  position: absolute;
-  font-size: 48px;
-  color: rgba(255, 255, 255, 0.15);
-  animation: float 10s ease-in-out infinite;
+
+.container {
+max-width: 1000px;
+margin: 60px auto;
+padding: 30px;
+background: rgba(47,48,32,0.85);
+border-radius: 18px;
+box-shadow: 0 15px 40px rgba(0,0,0,0.6);
 }
 
-.background-icons span:nth-child(1) { top: 10%; left: 10%; }
-.background-icons span:nth-child(2) { top: 25%; left: 80%; }
-.background-icons span:nth-child(3) { top: 65%; left: 20%; }
-.background-icons span:nth-child(4) { top: 50%; left: 60%; }
-.background-icons span:nth-child(5) { top: 85%; left: 70%; }
 
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-30px); }
-  100% { transform: translateY(0); }
+h1,h2 { text-align:center; }
+
+
+.btn {
+width: 100%;
+padding: 16px;
+margin: 12px 0;
+font-size: 18px;
+background: linear-gradient(135deg,#E06B45,#C0C0C0);
+border: none;
+border-radius: 12px;
+cursor: pointer;
+color: #2F3020;
 }
 
-.hero-container h1 {
-  font-size: 60px;
-  font-weight: 700;
+
+.btn:hover {
+transform: scale(1.03);
 }
 
-.hero-container h2 {
-  font-size: 24px;
-  font-weight: 400;
-  margin: 10px 0 20px;
-  color: #fddde6;
+
+.card {
+background: rgba(255,255,255,0.15);
+padding: 20px;
+margin: 15px 0;
+border-radius: 14px;
 }
 
-.hero-container p {
-  font-size: 16px;
-  max-width: 700px;
-  margin: 0 auto 30px;
-  line-height: 1.6;
-}
 
-.hero-buttons .btn {
-  display: inline-block;
-  margin: 8px;
-  padding: 12px 28px;
-  border-radius: 30px;
-  font-weight: 500;
-  color: #fff;
-  border: 2px solid #dba1ff;
-  text-decoration: none;
-  background: rgba(255,255,255,0.1);
-  transition: all 0.3s ease;
-}
-
-.hero-buttons .btn:hover {
-  background: #dba1ff;
-  color: #fff;
-  transform: translateY(-4px);
-  box-shadow: 0 12px 25px rgba(219,161,255,0.4);
-}
-
-/* ==============================
-   ACADEMIC SECTION
-================================ */
-.academic-section {
-  padding: 80px 20px;
-  background: #f9f9f9;
-}
-
-.academic-header {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.academic-header h1 {
-  font-size: 40px;
-  font-weight: 700;
-  color: #2c1b5f;
-}
-
-.academic-header p {
-  font-size: 16px;
-  color: #555;
-  max-width: 700px;
-  margin: 12px auto 0;
-  line-height: 1.6;
-}
-
-/* Grid */
-.academic-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* Card */
-.academic-card {
-  background: #fff;
-  padding: 25px 30px;
-  border-radius: 16px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-}
-
-.academic-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-}
-
-.academic-card h3 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #2c1b5f;
-  margin-bottom: 8px;
-}
-
-.academic-card h4 {
-  font-size: 15px;
-  font-weight: 400;
-  color: #555;
-  margin-bottom: 12px;
-}
-
-.academic-card p {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.5;
-}
-
-.academic-score {
-  display: inline-block;
-  margin-top: 15px;
-  font-weight: 600;
-  color: #8e5bff;
-  font-size: 16px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-container h1 {
-    font-size: 42px;
-  }
-  .hero-container h2 {
-    font-size: 20px;
-  }
+.back {
+margin-top: 30px;
+background: linear-gradient(135deg,#f7971e,#ffd200);
+color: black;
 }
